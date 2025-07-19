@@ -5,17 +5,17 @@ from logging.handlers import RotatingFileHandler
 
 
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7717466803:AAFTtTgo1fxE3JQPM6zYa80qmxzB7wqLHkQ")
-API_ID = int(os.environ.get("API_ID", "26657288"))
-API_HASH = os.environ.get("API_HASH", "00536e431477dbb16583d5b85813aa72")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+API_ID = int(os.environ.get("API_ID", ""))
+API_HASH = os.environ.get("API_HASH", "")
 
 
-OWNER_ID = int(os.environ.get("OWNER_ID", "1008989961"))
-DB_URL = os.environ.get("DB_URL", "eg3skk3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+DB_URL = os.environ.get("DB_URL", "")
 DB_NAME = os.environ.get("DB_NAME", "DivineBots")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002611690652"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 
@@ -66,7 +66,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need 
 
 
 
-ADMINS.append(1008989961)
+ADMINS.append(OWNER_ID)
 ADMINS.append(8037083010)
 
 LOG_FILE_NAME = "filesharingbot.txt"
