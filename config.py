@@ -23,7 +23,7 @@ FILE_AUTO_DELETE = int(os.getenv("FILE_AUTO_DELETE", "1800")) # auto delete in s
 
 
 PORT = os.environ.get("PORT", "8080")
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "2"))
 
 
 
@@ -66,8 +66,8 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {mention}\n\n<b>You Need 
 
 
 
-ADMINS.append(OWNER_ID)
-ADMINS.append(6848088376)
+ADMINS.append(1008989961)
+ADMINS.append(8037083010)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
